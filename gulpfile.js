@@ -13,7 +13,7 @@ gulp.task('sass', () => {
         console.error('Error!', err.message);
     })
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('builds/PixelPlus/css'))
+    .pipe(gulp.dest('builds/Theme/css'))
 });
 
 gulp.task('watch', () => {
@@ -21,7 +21,7 @@ gulp.task('watch', () => {
 });
 
 gulp.task('webserver', () => {
-    gulp.src('builds/PixelPlus/')
+    gulp.src('builds/Theme/')
         .pipe(webserver({
             livereload: true,
             port: 80
@@ -29,11 +29,11 @@ gulp.task('webserver', () => {
 });
 
 gulp.task('autoprefix', () => {
-    return gulp.src('builds/PixelPlus/css/style.css')
+    return gulp.src('builds/Theme/css/style.css')
         .pipe(autoprefixer({
             browsers: ['last 15 versions']
     }))
-    .pipe(gulp.dest('builds/PixelPlus/css/prefixedVersion'));
+    .pipe(gulp.dest('builds/Theme/css/prefixedVersion'));
 })
 
 gulp.task('default', ['sass', 'watch', 'webserver', 'autoprefix']);
