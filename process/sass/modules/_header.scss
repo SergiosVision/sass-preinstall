@@ -1,0 +1,41 @@
+/* Header */
+header{
+    background-color: #dcdcdc;
+    height: 230px;
+    flex-grow: 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .brand{
+        display: inline-block;
+        img{
+            max-width: 273px;
+            height: auto;
+        }
+    }
+    .header-contacts{
+        font-family: Open Sans;
+        color: $mainDark;
+        font-size: 40px;
+        margin-top: -25px;
+        p{
+            margin-bottom: -10px;
+        }
+        .feedback{
+            font-size: 24px;
+            display: inline-block;
+            border-bottom: 2px dashed $mainDark;
+            font-family: $mainFont;
+            font-weight: bold;
+            color: $mainDark;
+            line-height: 1;
+            float: right;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    }
+}
+/* Header END */

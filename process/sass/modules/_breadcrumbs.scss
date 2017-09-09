@@ -1,0 +1,22 @@
+/* Breadcrumbs */
+
+.breadcrumbs{
+    ul{
+        color: $mainDark;
+        list-style: none;
+        li{
+            display: inline;
+            a{
+                color: $mainDark;
+                border-bottom: 1px solid $mainDark;
+            }
+        }
+    }
+}
+
+.breadcrumbs li+li::before{
+    content: "/\00a0";
+    padding: 0 3px;
+}
+
+/* Breadcrumbs END*/

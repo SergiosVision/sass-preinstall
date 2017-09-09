@@ -1,0 +1,70 @@
+/* Base Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    outline: none;
+    border: none;
+}
+
+body{
+    font-family: $mainFont;
+    font-size: 14px;
+    min-height: 100vh;
+}
+
+@font-face{
+    font-family: Open Sans;
+    src: url(fonts/opensanscondlight.ttf);
+}
+
+a{
+    text-decoration: none;
+}
+
+.active{
+    border-bottom: 2px solid $mainWhite !important;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+.fixed{
+    overflow: hidden;
+}
+
+.divider{
+    height: 2px;
+    width: 100%;
+    background-color: #777;
+}
+
+.container{
+    max-width: 980px;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+.fade{
+    animation: fade 1.5s;
+}
+
+@keyframes fade{
+    from{
+        opacity: .4;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* Base Styles END */

@@ -1,0 +1,18 @@
+{
+  "name": "pixel-plus",
+  "version": "1.0.0",
+  "description": "Piexl Plus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "SergiosVision",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-webserver": "^0.9.1"
+  }
+}
